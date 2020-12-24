@@ -80,7 +80,6 @@ public class ItemAdapter extends BaseAdapter {
                 final EditText instruction = view1.findViewById(R.id.add_instruction);
 
 
-
                 alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
