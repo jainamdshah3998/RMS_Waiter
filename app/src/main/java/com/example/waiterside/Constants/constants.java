@@ -14,8 +14,8 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class constants {
     public static final int SPLASH = 1000;
-  //  public static final String URL = "http://192.168.0.106:8080/";
- public static final String URL = "http://10.0.2.2:8080/";
+    public static final String URL = "http://192.168.0.106:8080/";
+// public static final String URL = "http://10.0.2.2:8080/";
 
 
     public static void logout(final Context context)

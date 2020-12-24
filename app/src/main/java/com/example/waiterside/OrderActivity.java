@@ -44,6 +44,7 @@ public class OrderActivity extends AppCompatActivity {
 
                 intent.putExtra("restrauntId",tableId);
                 startActivity(intent);
+                finish();
             }
         });
     }

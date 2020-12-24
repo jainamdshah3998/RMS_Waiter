@@ -23,16 +23,14 @@ public class TableDAO {
 
 
     public void loaddata(final Context context, final GridView listView) {
-        String URL = constants.URL + "restaurantTable/show/occupied";
+        String URL = constants.URL + "restaurantTable/show";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 GsonBuilder gsonBuilder = new GsonBuilder();
                 Gson gson = gsonBuilder.create();
                 RestaurantTableBean[] restaurantTableBeans = gson.fromJson(response, RestaurantTableBean[].class);
-                Log.e("Login", "Hello" + restaurantTableBeans[0].getTableCapacity());
-                Log.e("Login", "Hello" + restaurantTableBeans[0].getOccupied());
-                Log.e("Login", "Hello" + restaurantTableBeans[0].getTableId());
+
 
 
                 TableAdapter tableAdapter = new TableAdapter(context, restaurantTableBeans);
