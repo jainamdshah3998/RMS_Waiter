@@ -23,7 +23,7 @@ public class TableDAO {
 
 
     public void loaddata(final Context context, final GridView listView) {
-        String URL = constants.URL + "restaurantTable/show";
+        String URL = constants.URL + "restaurantTable/show/occupied";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
