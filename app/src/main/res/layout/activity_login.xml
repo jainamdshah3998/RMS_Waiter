@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/tables"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:text="LogIn"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/edttxt_login_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Enter Phone No"
+            android:inputType="phone">
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/edttxt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Password"
+            android:ems="10"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="21dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#0099CC"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</RelativeLayout>

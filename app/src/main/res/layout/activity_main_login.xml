@@ -1,0 +1,87 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.rms.MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="LogIn"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:text="Phone No"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <EditText
+        android:id="@+id/edttxt_login_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignBottom="@+id/textView2"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Mobile Number"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <EditText
+        android:id="@+id/edttxt_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignTop="@+id/textView3"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Password"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="145dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/textView1"
+        android:text="LogIn"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="428dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
