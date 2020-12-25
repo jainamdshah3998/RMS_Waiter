@@ -68,7 +68,6 @@ public class ItemAdapter extends BaseAdapter {
         addFoodItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, ""+itemBeans[position].getItemId(), Toast.LENGTH_SHORT).show();
                 final ItemDAO itemDAO=new ItemDAO();
 
 //                Add item quantiy dialog box

@@ -43,13 +43,10 @@ public class TableAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        //if (context==null)
+
         convertView = inflater.inflate(R.layout.custom_table, parent, false);
         TextView textview1=convertView.findViewById(R.id.textView1);
-      //  TextView textView = convertView.findViewById(R.id.textView2);
-       // TextView textView1 = convertView.findViewById(R.id.textView3);
-       // textView.setText(restaurantTableBeans[position].getTableId()+"");
-        textview1.setText("Table "+restaurantTableBeans[position].getTableId());
+             textview1.setText("Table "+restaurantTableBeans[position].getTableId());
         ImageView image=convertView.findViewById(R.id.imageView1);
         image.setImageResource(R.drawable.tables);
         return convertView;

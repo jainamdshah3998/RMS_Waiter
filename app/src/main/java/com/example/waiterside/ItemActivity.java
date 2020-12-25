@@ -43,46 +43,7 @@ public class ItemActivity extends AppCompatActivity {
         ItemDAO itemDAO=new ItemDAO();
         itemDAO.loaddata1(ItemActivity.this,listView,tableId);
 
-
-      /*  final ItemDAO itemDAO=new ItemDAO();
-        itemDAO.loaddata(ItemActivity.this,listView,catid);*/
         final int  tableid=intent.getIntExtra("tableid",0);
-      //  Log.e("Login","in item detailid"+tableid);
-      /*  category.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               // String selecteditem=adapterView.getItemAtPosition(i).toString();
-                //Toast.makeText(getApplicationContext(),selecteditem,Toast.LENGTH_LONG).show();
-            }
-        });
-*/
-
-/*
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                alertDialog = new AlertDialog.Builder(ItemActivity.this);
-                alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
-                alertDialog.setPositiveButton("Add", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        //itemDAO.addneworder(tableid);
-
-
-                    }
-                });
-
-                alertDialog.show();
-
-
-            }
-        });*/
 
     }
 

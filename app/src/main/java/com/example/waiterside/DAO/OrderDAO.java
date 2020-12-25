@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -73,6 +74,7 @@ public class OrderDAO  {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Toast.makeText(context.getApplicationContext(),"Item Removed",Toast.LENGTH_LONG).show();
 
             }
         });

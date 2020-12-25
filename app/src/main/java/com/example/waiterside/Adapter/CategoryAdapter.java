@@ -36,7 +36,6 @@ public class CategoryAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        //if (context==null)
         convertView = inflater.inflate(R.layout.view_category, parent, false);
         TextView textView = convertView.findViewById(R.id.view_category_textView);
         TextView textView1 = convertView.findViewById(R.id.view_category_textView1);

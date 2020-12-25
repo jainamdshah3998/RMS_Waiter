@@ -53,15 +53,7 @@ public class OrderActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.item_add_order_menu:
-                Log.e("Login","order detailid"+tableId);
 
-                Intent intent=new Intent(OrderActivity.this,CategoryActivity.class);
-                intent.putExtra("tableid",tableId);
-
-                startActivity(intent);
-
-                break;
             case  R.id.item_logout_menu:
                 constants.logout(OrderActivity.this);
                     break;

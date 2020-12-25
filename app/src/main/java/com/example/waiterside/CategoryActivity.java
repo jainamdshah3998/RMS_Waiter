@@ -26,7 +26,6 @@ public class CategoryActivity extends AppCompatActivity {
 
         listView=findViewById(R.id.lstview_category);
         CategoryDAO categoryDAO=new CategoryDAO();
-      //  categoryDAO.loaddata(CategoryActivity.this,listView);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

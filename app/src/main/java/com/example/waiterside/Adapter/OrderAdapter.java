@@ -72,7 +72,7 @@ public class OrderAdapter extends BaseAdapter {
 
                 }
                 orderedItemsBean[position].setQuantity(q);
-                Toast.makeText(parent.getContext(),"Minus Button Clicked",Toast.LENGTH_LONG).show();
+                Toast.makeText(parent.getContext(),"Item Quantity Decreased",Toast.LENGTH_LONG).show();
                 orderDAO.updateOrder(orderedItemsBean[position],context);
                 Intent intent=new Intent(context, OrderActivity.class);
                 intent.putExtra("restrauntId",orderedItemsBean[position].getOrder().getCustomersitting().getRestauranttable().getTableId());
@@ -90,7 +90,7 @@ public class OrderAdapter extends BaseAdapter {
                     q+=1;
                     textView3.setText(Integer.toString(q));
                     orderedItemsBean[position].setQuantity(q);
-                Toast.makeText(parent.getContext(),"Plus Button CLicked",Toast.LENGTH_LONG).show();
+                Toast.makeText(parent.getContext(),"Item Quantity Increased",Toast.LENGTH_LONG).show();
                 orderDAO.updateOrder(orderedItemsBean[position],context);
                 Intent intent=new Intent(context, OrderActivity.class);
                 intent.putExtra("restrauntId",orderedItemsBean[position].getOrder().getCustomersitting().getRestauranttable().getTableId());
@@ -102,7 +102,6 @@ public class OrderAdapter extends BaseAdapter {
         del.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(parent.getContext(),"Remove Button Clicked",Toast.LENGTH_LONG).show();
                 orderDAO.deletedata(orderedItemsBean[position].getOrderedItemsId(),context);
                 Intent intent=new Intent(context, OrderActivity.class);
                 intent.putExtra("restrauntId",orderedItemsBean[position].getOrder().getCustomersitting().getRestauranttable().getTableId());

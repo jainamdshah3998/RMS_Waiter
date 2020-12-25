@@ -3,6 +3,7 @@ package com.example.waiterside.DAO;
 import android.content.Context;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -82,12 +83,14 @@ public class ItemDAO {
 
     }
 
-    public  void  addfooditem(Context context, final int itemId, final String qty, final String instruction, final int tableId)
+    public  void  addfooditem(final Context context, final int itemId, final String qty, final String instruction, final int tableId)
     {
         String url=constants.URL+"orderedItems/items/add";
         StringRequest stringRequest=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Toast.makeText(context.getApplicationContext(),"New Item Added ",Toast.LENGTH_LONG).show();
+
 
             }
         }, new Response.ErrorListener() {
