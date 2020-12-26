@@ -38,7 +38,6 @@ public class OrderActivity extends AppCompatActivity {
         addItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Add Button Clicked",Toast.LENGTH_LONG).show();
                 Intent intent= new Intent(OrderActivity.this,ItemActivity.class);
                 Log.e("Table","table id in Order activity"+tableId);
 

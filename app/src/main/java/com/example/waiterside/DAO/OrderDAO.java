@@ -45,8 +45,6 @@ public class OrderDAO  {
                 OrderedItemsBean[] orderedItemsBeans = gSon.fromJson(response, OrderedItemsBean[].class);
                 OrderAdapter orderAdapter = new OrderAdapter(context, orderedItemsBeans,listView);
                 listView.setAdapter(orderAdapter);
-
-
             }
 
         }, new Response.ErrorListener() {
@@ -59,7 +57,6 @@ public class OrderDAO  {
 
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         requestQueue.add(stringRequest);
-
     }
 
     public void deletedata(int itemId, final Context context)
